@@ -2,7 +2,7 @@ package hello.hellospring.domain
 
 class Member {
     private var id:Long ?=null
-    private var name: String ?=null
+    var name: String ?=null
 
     fun getId(): Long? {
         return id
