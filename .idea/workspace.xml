@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c706ab03-6e6b-4592-9d82-d4b7279fc318" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/controller/MemberForm.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/members/createMemberForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/members/memberList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/controller/MemberController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/controller/MemberController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/repository/MemoryMemberRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/repository/MemoryMemberRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/service/MemberService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/service/MemberService.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +24,8 @@
       <list>
         <option value="Kotlin Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="HTML File" />
         <option value="Kotlin Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
