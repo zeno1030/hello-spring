@@ -29,13 +29,13 @@ class MemberServiceTest {
     fun 회원가입() {
         //given
         val member = Member()
-        member.setName("hello")
+        member.name = "hello"
 
         //when
         val saveId: Member = memberService.join(member)
 
         //then
-        val findMember: Member? = memberRepository.findById(saveId)
+        val findMember: Member? = memberRepository.findById(member.id!!)
         assertThat(member.name).isEqualTo(findMember?.name)
     }
 
@@ -44,10 +44,10 @@ class MemberServiceTest {
 
         //given
         val member1 = Member()
-        member1.setName("spring")
+        member1.name = "spring"
 
         val member2 = Member()
-        member2.setName("spring")
+        member2.name = "spring"
 
         //when
         memberService.join(member1)

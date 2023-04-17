@@ -1,7 +1,9 @@
 package hello.hellospring.repository
 
 import hello.hellospring.domain.Member
+import org.springframework.stereotype.Repository
 
+@Repository
 class MemoryMemberRepository: MemberRepository{
 
     private val store = HashMap<Long, Member>()
@@ -9,7 +11,7 @@ class MemoryMemberRepository: MemberRepository{
         TODO("Not yet implemented")
     }
 
-    override fun findById(id: Member): Member? {
+    override fun findById(id: Long): Member? {
         TODO("Not yet implemented")
     }
 
