@@ -1,9 +1,10 @@
 package hello.hellospring.domain
 
 class Member {
-    private var id:Long ?=null
+    var id:Long ?=null
     var name: String ?=null
 
+    @JvmName("")
     fun getId(): Long? {
         return id
     }
