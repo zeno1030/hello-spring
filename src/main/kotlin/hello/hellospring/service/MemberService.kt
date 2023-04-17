@@ -6,7 +6,7 @@ import hello.hellospring.repository.MemoryMemberRepository
 import org.springframework.stereotype.Service
 
 
-@Service
+
 class MemberService(memberRepository: MemoryMemberRepository) {
     private val memberRepository: MemberRepository = MemoryMemberRepository()
 

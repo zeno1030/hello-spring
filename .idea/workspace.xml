@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c706ab03-6e6b-4592-9d82-d4b7279fc318" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/controller/MemberController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/controller/HomeController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,13 +14,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/hello/hellospring/domain/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/hello/hellospring/domain/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/localstate/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/localstate/build-history.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/domain/Member.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/domain/Member.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/repository/MemberRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/repository/MemberRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/repository/MemoryMemberRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/repository/MemoryMemberRepository.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/service/MemberService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/hello/hellospring/service/MemberService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/hello/hellospring/service/MemberServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/hello/hellospring/service/MemberServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +49,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",

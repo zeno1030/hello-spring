@@ -3,7 +3,7 @@ package hello.hellospring.repository
 import hello.hellospring.domain.Member
 import org.springframework.stereotype.Repository
 
-@Repository
+
 class MemoryMemberRepository: MemberRepository{
 
     private val store = HashMap<Long, Member>()
