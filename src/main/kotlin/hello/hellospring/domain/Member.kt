@@ -1,10 +1,5 @@
 package hello.hellospring.domain
 
-class Member {
-    var id: Long? = null
-    var name: String? = null
-
-
-}
+class Member(var id:Long, var name: Int)
 
 
