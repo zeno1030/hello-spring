@@ -15,41 +15,40 @@ class MemberServiceTest {
     lateinit var memberRepository: MemoryMemberRepository
 
     @BeforeEach
-    fun beforeEach(){
+    fun beforeEach() {
         val memberRepository = MemoryMemberRepository()
         val memberService = MemberService(memberRepository)
-
     }
 
     @AfterEach
-    fun afterEach(){
+    fun afterEach() {
         memberRepository.clearStore()
     }
     @Test
     fun 회원가입() {
-        //given
+        // given
         val member = Member()
         member.name = "hello"
 
-        //when
+        // when
         val saveId: Member = memberService.join(member)
 
-        //then
+        // then
         val findMember: Member? = memberRepository.findById(member.id!!)
         assertThat(member.name).isEqualTo(findMember?.name)
     }
 
     @Test
-    fun 중복_회원_예외(){
+    fun 중복_회원_예외() {
 
-        //given
+        // given
         val member1 = Member()
         member1.name = "spring"
 
         val member2 = Member()
         member2.name = "spring"
 
-        //when
+        // when
         memberService.join(member1)
         val exception = assertThrows<IllegalStateException> {
             memberService.join(member2)

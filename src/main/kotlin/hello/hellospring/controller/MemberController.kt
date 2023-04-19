@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping
 class MemberController {
     private val memberService: MemberService
 
-   @Autowired
+    @Autowired
     constructor(memberService: MemberService) {
         this.memberService = memberService
     }
@@ -28,12 +28,11 @@ class MemberController {
         memberService.join(member)
 
         return "redirect:/"
-
     }
 
     @GetMapping("/members")
     fun list(model: Model): String {
-        val members:List<Member> = memberService.findMembers()
+        val members: List<Member> = memberService.findMembers()
         model.addAttribute("members", members)
         return "members/memberList"
     }

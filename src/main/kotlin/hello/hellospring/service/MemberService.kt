@@ -2,15 +2,12 @@ package hello.hellospring.service
 
 import hello.hellospring.domain.Member
 import hello.hellospring.repository.MemberRepository
-import hello.hellospring.repository.MemoryMemberRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
-
 
 @Service
 class MemberService @Autowired constructor(private val memberRepository: MemberRepository) {
 //    private val memberRepository: MemberRepository = MemoryMemberRepository()
-
 
     /**
      * 회원가입
@@ -18,7 +15,6 @@ class MemberService @Autowired constructor(private val memberRepository: MemberR
     fun join(member: Member): Member {
         validateDuplicateMember(member) // 중복 회원 검증
         return memberRepository.save(member)
-
     }
 
     private fun validateDuplicateMember(member: Member) {
@@ -38,7 +34,3 @@ class MemberService @Autowired constructor(private val memberRepository: MemberR
         return memberRepository.findById(memberId)
     }
 }
-
-
-
-

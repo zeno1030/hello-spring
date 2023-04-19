@@ -3,9 +3,8 @@ package hello.hellospring.repository
 import hello.hellospring.domain.Member
 import org.springframework.stereotype.Repository
 
-
 @Repository
-class MemoryMemberRepository: MemberRepository{
+class MemoryMemberRepository : MemberRepository {
 
     private val store = HashMap<Long, Member>()
     override fun save(member: Member): Member {
@@ -24,8 +23,7 @@ class MemoryMemberRepository: MemberRepository{
         TODO("Not yet implemented")
     }
 
-    fun clearStore(){
+    fun clearStore() {
         store.clear()
     }
-
 }

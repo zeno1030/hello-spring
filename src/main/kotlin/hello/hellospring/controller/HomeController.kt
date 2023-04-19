@@ -8,5 +8,4 @@ class HomeController {
     fun home(): String {
         return "home"
     }
-
 }

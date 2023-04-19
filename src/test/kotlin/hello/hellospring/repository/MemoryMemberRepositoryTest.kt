@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test
 class MemoryMemberRepositoryTest {
     private val repository = MemoryMemberRepository()
 
-
     @Test
     fun save() {
         // given

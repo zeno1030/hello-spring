@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.ResponseBody
 import org.springframework.web.bind.annotation.RestController
 
-@RestController //Json으로 받을 때는 @RestController
-@Controller //view로 보여 질때는 @controller 두개를 같이 쓸 수는 없다.
+@RestController // Json으로 받을 때는 @RestController
+@Controller // view로 보여 질때는 @controller 두개를 같이 쓸 수는 없다.
 class HelloController {
 
     @GetMapping("/hello")
@@ -51,8 +51,3 @@ class HelloController {
         }
     }
 }
-
-
-
-
-
