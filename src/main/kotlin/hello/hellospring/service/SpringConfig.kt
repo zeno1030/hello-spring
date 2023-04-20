@@ -1,23 +1,18 @@
-package hello.hellospring.service
+package hello.hellospring
 
-import hello.hellospring.repository.JdbcMemberRepository
 import hello.hellospring.repository.MemberRepository
-import hello.hellospring.repository.MemoryMemberRepository
-import org.springframework.beans.factory.annotation.Autowired
+import hello.hellospring.repository.JpaMemberRepository
+import hello.hellospring.service.MemberService
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import javax.persistence.EntityManager
 import javax.sql.DataSource
 
 @Configuration
-class SpringConfig {
-
-    private var dataSource:DataSource
-
-    @Autowired
-    constructor(dataSource: DataSource) {
-        this.dataSource = dataSource
-    }
-
+class SpringConfig(
+    private val dataSource: DataSource,
+    private val em: EntityManager
+) {
 
     @Bean
     fun memberService(): MemberService {
@@ -26,6 +21,9 @@ class SpringConfig {
 
     @Bean
     fun memberRepository(): MemberRepository {
-        return JdbcMemberRepository(dataSource)
+//      return MemoryMemberRepository()
+//      return JdbcMemberRepository(dataSource)
+//      return JdbcTemplateMemberRepository(dataSource)
+        return JpaMemberRepository(em)
     }
 }

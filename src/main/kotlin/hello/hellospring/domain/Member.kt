@@ -1,3 +1,17 @@
 package hello.hellospring.domain
 
-class Member(var id: Long, var name: Int)
+import javax.persistence.GeneratedValue
+import javax.persistence.GenerationType
+import javax.persistence.Id
+import javax.persistence.Entity
+
+
+@Entity
+class Member(){
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    var id: Long?= null
+    var name: Int?= null
+
+
+
+}
